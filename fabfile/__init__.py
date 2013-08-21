@@ -8,7 +8,7 @@ This can be used for web projects, browser kiosks, custom interactives, etc.
 
 from fabric.api import cd, env, task
 from fabric.contrib.files import exists
-from fabric.operations import require
+from fabric.operations import local, require
 
 from fabrelic import newrelic
 import neoprene as drupal
@@ -50,6 +50,24 @@ def staging():
     env.filebase = config.DEV_FILEBASE
     env.new_relic_app_name = config.NEW_RELIC_APPLICATION_NAME_DEV
 
+"""
+Bootstrap this template
+
+Get all the parts of this template (and run some checks)
+(...coming soon)
+"""
+
+
+@task
+def bootstrap():
+    """Setup the required submodule for the Fabric scripts to work """
+    local('git submodule add \
+           git@github.com:scimusmn/fabrelic.git\
+           fabfile/fabrelic')
+    local('git submodule add \
+           git@github.com:scimusmn/neoprene.git\
+           fabfile/neoprene')
+    sync_submodules()
 
 """
 Branch definition
