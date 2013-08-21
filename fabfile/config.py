@@ -15,6 +15,12 @@ REPO_URL = 'git@github.com:scimusmn/example.git'
 """
 DEPLOY DETAILS
 """
+
+# Remote username and host combination where you're deploying to
+# Staging server details
+PROD_DEPLOY_USER = ['deployuser']
+PROD_DEPLOY_HOST = ['deployuser@deploy-server.example.org']
+
 #
 # Production server details
 #
@@ -28,12 +34,12 @@ PROD_DOMAIN = 'http://www.example.org'
 PROD_SUBDIR = 'sub-site'
 
 #
-# Staging server details
-#
 # Same instructions as above, but for the staging or dev site.
+#
 DEV_FILEBASE = '/full/development/website/path'
 DEV_DOMAIN = 'http://dev.example.org'
 DEV_SUBDIR = 'sub-site'
+DEV_DEPLOY_HOST = ['deployuser@deploy-server.example.org']
 
 # New Relic monitoring details
 NEW_RELIC_APPLICATION_NAME = 'example.org'
