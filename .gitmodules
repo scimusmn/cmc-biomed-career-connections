@@ -1,0 +1,3 @@
+[submodule "fabfile/fabrelic"]
+	path = fabfile/fabrelic
+	url = git@github.com:scimusmn/fabrelic.git
