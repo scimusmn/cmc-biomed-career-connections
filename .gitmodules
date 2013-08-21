@@ -1,3 +1,6 @@
 [submodule "fabfile/fabrelic"]
 	path = fabfile/fabrelic
 	url = git@github.com:scimusmn/fabrelic.git
+[submodule "fabfile/neoprene"]
+	path = fabfile/neoprene
+	url = git@github.com:scimusmn/neoprene.git
