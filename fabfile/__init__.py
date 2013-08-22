@@ -82,7 +82,10 @@ def bootstrap():
     """Setup the required submodule for the Fabric scripts to work """
     local('git submodule add git@github.com:scimusmn/fabrelic.git fabfile/fabrelic')
     local('git submodule add git@github.com:scimusmn/neoprene.git fabfile/neoprene')
-    sync_submodules()
+    # Get all the files in all of the submodules all the way down the tree.
+    # We can't run velour's sync_submodules command here, because velour
+    # hasn't been imported yet. That's what bootstrap is doing.
+    local("git submodule update --init --recursive")
 
 """
 Branch definition
