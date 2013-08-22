@@ -10,11 +10,30 @@ from fabric.api import cd, env, task
 from fabric.contrib.files import exists
 from fabric.operations import local, require
 
-from fabrelic import newrelic
-import neoprene as drupal
-from neoprene.helper import header
-from neoprene.velour.git import (check_git, sync_local_from_remote,
-                                 sync_submodules)
+import_error_msg = """
+WARNING: Your application is not ready yet. You need to run
+
+`fab bootstrap`
+
+to get the deploy scripts ready."""
+
+try:
+    from fabrelic import newrelic
+except ImportError:
+    print
+    print import_error_msg
+    import_error_msg = ''
+
+try:
+    import neoprene as drupal
+    from neoprene.helper import header
+    from neoprene.velour.git import (check_git, sync_local_from_remote,
+                                     sync_submodules)
+except ImportError:
+    if import_error_msg != '':
+    print
+    print import_error_msg
+
 import config
 import os
 
