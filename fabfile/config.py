@@ -18,8 +18,8 @@ DEPLOY DETAILS
 
 # Remote username and host combination where you're deploying to
 # Staging server details
-PROD_DEPLOY_USER = ['deployuser']
-PROD_DEPLOY_HOST = ['deployuser@deploy-server.example.org']
+DEPLOY_USER = ['deployuser']
+DEPLOY_HOST = ['deployuser@deploy-server.example.org']
 
 #
 # Production server details

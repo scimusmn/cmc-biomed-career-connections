@@ -42,8 +42,8 @@ Base configuration
 
 These elements are common to all SMM web projects
 """
-env.deploy_user = config.PROD_DEPLOY_USER
-env.hosts = config.PROD_DEPLOY_HOST
+env.deploy_user = config.DEPLOY_USER
+env.hosts = config.DEPLOY_HOST
 
 # This secret should be defined as an environment variable on the build system
 env.new_relic_api_key = os.environ.get('NEW_RELIC_API_KEY')
