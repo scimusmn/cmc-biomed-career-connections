@@ -61,12 +61,8 @@ Get all the parts of this template (and run some checks)
 @task
 def bootstrap():
     """Setup the required submodule for the Fabric scripts to work """
-    local('git submodule add \
-           git@github.com:scimusmn/fabrelic.git\
-           fabfile/fabrelic')
-    local('git submodule add \
-           git@github.com:scimusmn/neoprene.git\
-           fabfile/neoprene')
+    local('git submodule add git@github.com:scimusmn/fabrelic.git fabfile/fabrelic')
+    local('git submodule add git@github.com:scimusmn/neoprene.git fabfile/neoprene')
     sync_submodules()
 
 """
