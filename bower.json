@@ -1,0 +1,10 @@
+{
+  "name": "smm-app-template",
+
+  "dependencies": {
+    "html5-boilerplate": "~4.3.0",
+    "backbone": "~1.1.1",
+    "jquery": "~2.1.0",
+    "requirejs": "~2.1.10"
+  }
+}
