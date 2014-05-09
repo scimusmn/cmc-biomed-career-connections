@@ -4,6 +4,21 @@
 
 Basic template for starting a new kiosk or web project.
 
+## Installation
+
+Clone the template as a new project
+```
+$ git clone git@github.com:scimusmn/app-template.git project-name
+$ hub create scimusmn/project-name
+$ git remote set-url origin git@github.com:scimusmn/project-name.git
+```
+TODO: Change configs as well
+
+Get components with Bower
+```
+$ bower install
+```
+
 Delete everything above this line and start filling out the README
 
 ***
