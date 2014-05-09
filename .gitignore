@@ -1,2 +1,2 @@
 *.pyc
-www/vendor/bower
+app/scripts/vendor
