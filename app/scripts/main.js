@@ -1,6 +1,10 @@
 require.config({
     //baseUrl: 'vendor/bower/jquery/dist',
 
+    // Prevent pages from being cached by the webserver in development.
+    // Remove this in production.
+    urlArgs: "bust=" + (new Date()).getTime(),
+
     enforceDefine: true,
     paths: {
         'jquery': 'vendor/jquery/dist/jquery',
