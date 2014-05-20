@@ -26,8 +26,9 @@ require.config({
         'backbone': 'backbone/backbone',
         'text': 'text/text'
     },
+
     /**
-     * Backbone and underscore are not AMD compliant. We have to use these
+     * Backbone and Underscore are not AMD compliant. We have to use these
      * shims to load them.
      */
     shim: {
