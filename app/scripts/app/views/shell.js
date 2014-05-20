@@ -6,6 +6,7 @@ define(function (require) {
         _                   = require('underscore'),
         Backbone            = require('backbone'),
         //models              = require('app/models/model-name'),
+        //
         tpl                 = require('text!tpl/Shell.html'),
 
         template = _.template(tpl),
