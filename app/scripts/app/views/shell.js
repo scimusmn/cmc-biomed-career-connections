@@ -22,7 +22,7 @@ define(function (require) {
             this.$el.html(template());
             //var listView = new EmployeeListView({collection: this.employeeList, el: $(".employee-list", this.el)});
             //listView.render();
-            //$menuItems = $('.navbar .nav li', this.el);
+            $menuItems = $('.navbar .nav li', this.el);
             return this;
         },
 
@@ -48,7 +48,7 @@ define(function (require) {
 
 
         selectMenuItem: function (menuItem) {
-            //$menuItems.removeClass('active');
+            $menuItems.removeClass('active');
             if (menuItem) {
                 $('.' + menuItem).addClass('active');
             }
