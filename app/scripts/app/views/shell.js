@@ -46,12 +46,13 @@ define(function (require) {
             }
         },
 
-        //selectMenuItem: function (menuItem) {
+
+        selectMenuItem: function (menuItem) {
             //$menuItems.removeClass('active');
-            //if (menuItem) {
-                //$('.' + menuItem).addClass('active');
-            //}
-        //}
+            if (menuItem) {
+                $('.' + menuItem).addClass('active');
+            }
+        }
 
     });
 
