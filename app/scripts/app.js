@@ -14,13 +14,13 @@ require.config({
         'text': 'text/text'
     },
     shim: {
-        "underscore": {
-            deps: [],
-            exports: "_"
-        },
         "backbone": {
             deps: ["jquery", "underscore"],
             exports: "Backbone"
+        },
+        "underscore": {
+            deps: [],
+            exports: "_"
         },
     }
 });
