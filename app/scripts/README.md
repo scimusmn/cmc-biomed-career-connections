@@ -1,4 +1,4 @@
-# File structure
+# Scripts - file structure
 
 <dl>
   <dt>app/</dt>
