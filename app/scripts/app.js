@@ -41,6 +41,7 @@ require.config({
             exports: "_"
         },
     }
+
 });
 
 require(['jquery', 'backbone', 'app/router'], function ($, Backbone, Router) {
