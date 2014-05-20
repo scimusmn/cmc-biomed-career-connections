@@ -17,6 +17,7 @@ define(function (require) {
         routes: {
             "": "home",
             "contact": "contact",
+            "about": "about",
         },
 
         home: function () {
@@ -31,6 +32,14 @@ define(function (require) {
                 var view = new ContactView({el: $content});
                 view.render();
                 shellView.selectMenuItem('contact-menu');
+            });
+        },
+
+        about: function () {
+            require(["app/views/About"], function (AboutView) {
+                var view = new AboutView({el: $content});
+                view.render();
+                shellView.selectMenuItem('about-menu');
             });
         },
 
