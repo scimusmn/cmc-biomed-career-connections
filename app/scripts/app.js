@@ -1,7 +1,20 @@
+/**
+ * Use this file to include your JS libraries and files using require.js
+ * http://requirejs.org/
+ */
 require.config({
 
     baseUrl: 'scripts/vendor',
 
+    /**
+     *
+     * For development
+     * Require will cause your scripts to be cached, which can be a pain
+     * during development. This tacks a dynamic date on the end of each
+     * js include.
+     *
+     * Remove for production.
+     */
     urlArgs: "bust=" + (new Date()).getTime(),
 
     paths: {
@@ -13,6 +26,10 @@ require.config({
         'backbone': 'backbone/backbone',
         'text': 'text/text'
     },
+    /**
+     * Backbone and underscore are not AMD compliant. We have to use these
+     * shims to load them.
+     */
     shim: {
         "backbone": {
             deps: ["jquery", "underscore"],
