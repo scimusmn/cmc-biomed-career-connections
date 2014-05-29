@@ -1,3 +1,6 @@
+// Learning
+console.log("router.js loaded");
+
 define(function (require) {
 
     "use strict";
@@ -27,6 +30,7 @@ define(function (require) {
         },
 
         contact: function () {
+            console.log("On contact view");
             require(["app/views/Contact"], function (ContactView) {
                 var view = new ContactView({el: $content});
                 view.render();
@@ -35,6 +39,7 @@ define(function (require) {
         },
 
         about: function () {
+            console.log("On about view");
             require(["app/views/About"], function (AboutView) {
                 var view = new AboutView({el: $content});
                 view.render();
