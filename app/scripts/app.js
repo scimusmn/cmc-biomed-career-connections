@@ -4,6 +4,9 @@
  */
 require.config({
 
+    /**
+     * Default location for required elements
+     */
     baseUrl: 'scripts/vendor',
 
     /**
@@ -17,6 +20,9 @@ require.config({
      */
     urlArgs: "bust=" + (new Date()).getTime(),
 
+    /**
+     * Setup paths to key libraries
+     */
     paths: {
         app: '../app',
         tpl: '../tpl',
