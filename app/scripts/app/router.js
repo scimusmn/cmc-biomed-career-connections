@@ -22,7 +22,6 @@ define(function (require) {
 
         home: function () {
             console.log("On home view");
-            homeView.delegateEvents(); // delegate events when the view is recycled
             homeView.render();
             shellView.selectMenuItem('home-menu');
         },
