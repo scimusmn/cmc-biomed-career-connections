@@ -1,6 +1,6 @@
 # SMM application template
 
-**WARNING: this is a work in progress**
+**WARNING: this was a working project that has since been mostly abandoned. We're leaving it up for future reference.**
 
 Basic template for starting a new kiosk or web project.
 
