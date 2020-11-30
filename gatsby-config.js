@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Science Museum of Minnesota main website.',
-    description: 'Client application for smm.org',
-    author: '@sciencemuseummn',
+    author: '@scimusmn',
+    description: 'Science Museum of Minnesota exhibit template',
+    title: 'app-template',
   },
   plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-eslint',
     {
       resolve: 'gatsby-plugin-sass',
