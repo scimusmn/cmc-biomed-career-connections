@@ -8,6 +8,9 @@ module.exports = {
   env: {
     browser: true,
   },
+  ignorePatterns: [
+    'public/*',
+  ],
   rules: {
     'import/no-extraneous-dependencies': 'off',
     // The SMM team doesn't write React code in .jsx files exclusively, as is suggested in the
