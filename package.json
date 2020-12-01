@@ -56,6 +56,7 @@
     "depcheck": "node -r @babel/register scripts/depcheck.js",
     "dev": "gatsby develop",
     "develop": "gatsby develop",
+    "install:arduino-base": "node scripts/install-arduino-base.js",
     "lint": "npm-run-all lint:*",
     "lint:code": "node_modules/.bin/eslint .",
     "lint:style": "node_modules/.bin/stylelint \"**/*.*css\"",
