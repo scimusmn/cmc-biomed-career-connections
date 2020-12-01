@@ -59,6 +59,7 @@
     "lint": "npm-run-all lint:*",
     "lint:code": "node_modules/.bin/eslint .",
     "lint:style": "node_modules/.bin/stylelint \"**/*.*css\"",
+    "postinstall": "node scripts/install-submodule-dependencies.js",
     "serve": "gatsby serve",
     "start": "npm run develop"
   }
