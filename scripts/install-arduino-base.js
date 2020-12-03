@@ -2,7 +2,7 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 
 // Setup dir structure and install submodule for arduino-base if it does not exist
-if (!fs.existsSync('src/Arduino/arduino-base/ReactSerial')) {
+if (!fs.existsSync('src/Arduino')) {
   execSync('cd src && mkdir -p Arduino');
   execSync('cd src/Arduino && git submodule add https://github.com/scimusmn/arduino-base');
 }
