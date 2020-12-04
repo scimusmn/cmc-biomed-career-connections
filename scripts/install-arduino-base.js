@@ -10,5 +10,10 @@ if (!fs.existsSync('src/Arduino')) {
 // Get the latest submodule reference
 execSync('git submodule update --init');
 
-// Install/update arduino-base ReactSerial library dependencies
-execSync('cd src/Arduino/arduino-base/ReactSerial && yarn');
+// Install/update arduino-base ReactSerial library dependencies in our root package.json
+// In the future, the list of deps might grow so we need to think about potential solutions for that
+// But for now, we only need react-scrollable-list
+execSync('yarn add react-scrollable-list');
+
+// Copy wrapper page into Gatsby pages directory
+execSync('cp src/Arduino/arduino-base/ReactSerial/examples/gatsby/gatsby-wrapper-page.js src/pages/arduino.js');
