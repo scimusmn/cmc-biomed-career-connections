@@ -26,7 +26,7 @@ cp .cache/default-html.js src/html.js
   ...
   {props.postBodyComponents}
 
-  {/* Expose Electron's IPC Renderer for use within React Components *}
+  {/* Expose Electron's IPC Renderer for use within React Components */}
   <script
     dangerouslySetInnerHTML={{
       __html: `
