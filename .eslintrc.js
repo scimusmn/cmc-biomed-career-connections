@@ -10,6 +10,8 @@ module.exports = {
   },
   ignorePatterns: [
     'public/*',
+    'src/Arduino/arduino-base',
+    'src/html.js',
   ],
   rules: {
     'import/no-extraneous-dependencies': 'off',

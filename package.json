@@ -1,8 +1,8 @@
 {
   "name": "app-template",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.0.1",
+  "description": "Basic template for starting a new kiosk or web project",
+  "version": "1.0.0",
   "author": "@scimusmn",
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -54,13 +54,11 @@
     "build": "gatsby clean && gatsby build",
     "clean": "gatsby clean",
     "depcheck": "node -r @babel/register scripts/depcheck.js",
-    "dev": "gatsby develop",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --port 3000",
     "install:arduino-base": "node scripts/install-arduino-base.js",
     "lint": "npm-run-all lint:*",
     "lint:code": "node_modules/.bin/eslint .",
     "lint:style": "node_modules/.bin/stylelint \"**/*.*css\"",
-    "serve": "gatsby serve",
-    "start": "npm run develop"
+    "serve": "gatsby serve --port 3000"
   }
 }
