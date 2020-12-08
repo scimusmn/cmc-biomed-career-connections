@@ -17,3 +17,14 @@ execSync('yarn add react-scrollable-list');
 
 // Copy wrapper page into Gatsby pages directory
 execSync('cp src/Arduino/arduino-base/ReactSerial/examples/gatsby/gatsby-wrapper-page.js src/pages/arduino.js');
+
+// Customize Gatsby's default html.js to create ipcRenderer reference.
+if (!fs.existsSync('src/html.js')) {
+  // Build site to generate .cache directory
+  if (!fs.existsSync('.cache')) {
+    execSync('yarn build');
+  }
+
+  // Inject script into customized html.js
+  execSync('sed "s^</body>^  <script dangerouslySetInnerHTML={{ __html: \\`if (typeof require !== \'undefined\') window.ipcRef = require(\'electron\').ipcRenderer;\\` }} />\\\n</body>^" .cache/default-html.js > src/html.js');
+}
