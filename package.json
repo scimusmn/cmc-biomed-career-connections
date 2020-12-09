@@ -19,6 +19,7 @@
     "react": "^17.0.1",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-scrollable-list": "^1.3.0",
     "reactstrap": "^8.4.1"
   },
   "devDependencies": {
