@@ -5,6 +5,7 @@ Basic template for starting a new kiosk or web project.
 Clone the template as a new project
 ```
 $ git clone git@github.com:scimusmn/app-template.git project-name
+$ cd project-name
 $ git remote set-url origin git@github.com:scimusmn/project-name.git
 ```
 TODO: Change configs as well
