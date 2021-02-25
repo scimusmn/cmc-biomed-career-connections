@@ -15,11 +15,11 @@ Get npm packages with yarn
 $ yarn
 ```
 ## Setting up serial communication
-If you want to enable serial communication, via Stele, for this app, you'll need to register an `ipcRenderer` from `Electron` and import the [`arduino-base`](https://github.com/scimusmn/arduino-base) sub-module. To do this, run the following script: 
+If you want to enable serial communication, via Stele, for this app, you'll need to register an `ipcRenderer` from `Electron` and import the [`arduino-base`](https://github.com/scimusmn/arduino-base) sub-module. This has all been automated with the following script: 
 ```bash
 yarn install:arduino-base
 ```
-Upon completion, you should see a new page created at `src/pages/arduino.js` that can be used for testing Arduino communication.
+Upon completion, you will see a new page at `src/pages/arduino.js` that can be used for testing Arduino communication.
 
 
 ## Cleanup
