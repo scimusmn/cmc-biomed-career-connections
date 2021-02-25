@@ -8,37 +8,19 @@ $ git clone git@github.com:scimusmn/app-template.git project-name
 $ cd project-name
 $ git remote set-url origin git@github.com:scimusmn/project-name.git
 ```
-TODO: Change configs as well
+> TODO: Change configs as well
 
 Get npm packages with yarn
 ```
 $ yarn
 ```
 ## Setting up serial communication
-If you want to enable serial communication, via Stele, for this app, you'll need to register an `ipcRenderer` from `Electron`. To do this, you will need to [customize the default `html.js` file](https://www.gatsbyjs.com/docs/custom-html/) to inject a script that makes the reference.
-1. Make a copy of `.cache/default-html.js`. Place in the `src/` folder and rename to `html.js`. 
+If you want to enable serial communication, via Stele, for this app, you'll need to register an `ipcRenderer` from `Electron` and import the [`arduino-base`](https://github.com/scimusmn/arduino-base) sub-module. To do this, run the following script: 
 ```bash
-cd your-gatsby-repo
-cp .cache/default-html.js src/html.js
+yarn install:arduino-base
 ```
-2. Edit `src/html.js` and insert the entire `<script>` tag seen below. It should be the last tag before the `</body>` closing tag. We use React's [dangerouslySetInnerHTML](https://www.gatsbyjs.com/docs/custom-html/#adding-custom-javascript) attribute which should be used with caution, but this is an appropriate exception. 
-```html
-<body>
-  ...
-  {props.postBodyComponents}
+Upon completion, you should see a new page created at `src/pages/arduino.js` that can be used for testing Arduino communication.
 
-  {/* Expose Electron's IPC Renderer for use within React Components */}
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `
-        if (typeof require !== 'undefined') {
-            window.ipcRef = require('electron').ipcRenderer;
-          }
-      `,
-    }}
-  />
-</body>
-```
 
 ## Cleanup
 Once you're done going through the setup of this template, delete everything above this line and start filling out the README with your app details.
