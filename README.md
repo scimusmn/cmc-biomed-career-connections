@@ -1,5 +1,5 @@
 # SMM application template
-Basic template for starting a new kiosk or web project.
+Basic Gatsby/React template for starting a new kiosk or web project.
 
 ## Installation
 Clone the template as a new project
