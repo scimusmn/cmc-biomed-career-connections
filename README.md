@@ -10,7 +10,7 @@ $ git remote set-url origin git@github.com:scimusmn/project-name.git
 ```
 > TODO: Change configs as well
 
-Get npm packages with yarn
+Install dependencies with yarn
 ```
 $ yarn
 ```
