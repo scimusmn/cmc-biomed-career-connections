@@ -4,15 +4,15 @@ Basic Gatsby/React template for starting a new kiosk or web project.
 ## Installation
 Clone the template as a new project
 ```
-# (Using SSH)
+(Using SSH)
 $ git clone git@github.com:scimusmn/app-template.git project-name
 $ cd project-name
 $ git remote set-url origin git@github.com:scimusmn/project-name.git
 
-# (Using HTTPS)
-$ git clone git@github.com:scimusmn/app-template.git project-name
+(Using HTTPS)
+$ git clone https://github.com/scimusmn/app-template.git project-name
 $ cd project-name
-$ git remote set-url origin git@github.com:scimusmn/project-name.git
+$ git remote set-url origin https://github.com/scimusmn/project-name.git
 ```
 > TODO: Change configs as well
 
