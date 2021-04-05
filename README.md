@@ -1,44 +1,10 @@
-# SMM application template
-Basic Gatsby/React template for starting a new kiosk or web project.
-
-## Installation
-Clone the template as a new project
-```bash
-# (Using SSH)
-$ git clone git@github.com:scimusmn/app-template.git project-name
-$ cd project-name
-$ git remote set-url origin git@github.com:scimusmn/project-name.git
-
-# (Using HTTPS)
-$ git clone https://github.com/scimusmn/app-template.git project-name
-$ cd project-name
-$ git remote set-url origin https://github.com/scimusmn/project-name.git
-```
-> TODO: Change configs as well
-
-Install dependencies with yarn
-```
-$ yarn
-```
-## Setting up serial communication
-If you want to enable serial communication, via Stele, for this app, you'll need to register an `ipcRenderer` from `Electron` and import the [`arduino-base`](https://github.com/scimusmn/arduino-base) sub-module. This has all been automated with the following script: 
-```bash
-yarn install:arduino-base
-```
-Upon completion, you will see a new page at `src/pages/arduino.js` that can be used for testing Arduino communication.
-
-
-## Cleanup
-Once you're done going through the setup of this template, delete everything above this line and start filling out the README with your app details.
-
-***
-
-# Project: Application name
+# Project: TSCK Eye Tracker
+This combines components built in the tsck-eye-tracker repo from a CRA, and refactors to use smm's gatsby app-template with the arduino-base submodule.
 
 ## Usage (required)
-* Describe where this code used.
-* Describe if this code is installed on a specific computer or can be generally installed on any computer.
-* Describe the physical location where this code is used. Describe which computer this code is installed on. Describe this computer's location, including building, institution, museum, traveling show, gallery, and/or floor.
+* This code is used with a Tobii eye tracker that has its own installation documentation
+TODO: Link docs for Tobii and stream-engine installation
+This component will run on a specific windows machine with an arduino and eye tracker hardware as part of the Robosapiens exhibit for TSCK.
 
 ## About (required)
 Technical description of this code.

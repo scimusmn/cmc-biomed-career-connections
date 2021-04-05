@@ -1,7 +1,7 @@
 /* eslint react/prop-types: 0 */
-import React, { useState, useEffect } from 'react';
-import { Row, Col } from 'reactstrap';
-import EyeButton from '@components/EyeButton';
+import React, { useEffect } from 'react';
+// import { Row, Col } from 'reactstrap';
+// import EyeButton from '@components/EyeButton';
 import withSerialCommunication from '@components/Serial/SerialHOC';
 import {
   gazeX, gazeY, isUserPresent, // useCoordinates,
@@ -12,7 +12,7 @@ import deleteImg from '../../images/delete.svg';
 import deleteAll from '../../images/delete-all.svg';
 import play from '../../images/play.svg';
 
-const Test = (props) => {
+const Compose = (props) => {
   const { ipcAvailable, sendData, setOnDataCallback } = props;
 
   function onData(data) {
@@ -44,91 +44,40 @@ const Test = (props) => {
   /* isUserPresent */
   const [userPresent, updateUserPresent] = isUserPresent();
 
-  const [button1, selectButton1] = useState(false);
-  const [button2, selectButton2] = useState(false);
-  const [button3, selectButton3] = useState(false);
-
-  const selectedStyle = { background: 'purple' };
-  const deselectedStyle = { background: 'gray' };
-
-  console.log(userPresent, 'isUserPresent');
-
-  function handleButton(button) {
-    console.log('hey');
-    // currently the "button presses" are read as unknown commands
-    if (button === 1) {
-      selectButton1(true);
-      selectButton2(false);
-      selectButton3(false);
-      sendClick('{button1-press:1}');
-    }
-    if (button === 2) {
-      selectButton2(true);
-      selectButton1(false);
-      selectButton3(false);
-      sendClick('{button1-press:1}');
-    }
-    if (button === 3) {
-      selectButton3(true);
-      selectButton1(false);
-      selectButton2(false);
-      sendClick('{button1-press:1}');
-    }
-  }
-
   return (
-    <>
-      <div className="calibration-background component-container">
-        {/* <div className="cursor" style={{ left: `${x}px`, top: `${y}px` }}>
-          <div className="inner" />
-        </div>
-        */}
-        <Row>
-          <Col>
-            <h1>Calibration screen, styles only for now</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={12}>
-            <h2>
-              {hasMovedCursor
-                ? `Your cursor is at ${x}, ${y}.`
-                : 'Move your mouse around.'}
-            </h2>
-            <button type="button" onClick={() => sendClick(WAKE_ARDUINO)}>
-              Wake Arduino
-            </button>
-            <h3>
-              IPC:
-              {ipcAvailable.toString()}
-            </h3>
-            <button type="button" onClick={updateUserPresent}>
-              User:
-              {userPresent.toString()}
-            </button>
-          </Col>
-          <Col md={3}>
-            <EyeButton
-              displayString="button1"
-              onTrigger={() => handleButton(1)}
-              style={button1 ? selectedStyle : deselectedStyle}
-            />
-          </Col>
-          <Col md={3}>
-            <EyeButton
-              displayString="button2"
-              onTrigger={() => handleButton(2)}
-              style={button2 ? selectedStyle : deselectedStyle}
-            />
-          </Col>
-          <Col md={3}>
-            <EyeButton
-              displayString="button3"
-              onTrigger={() => handleButton(3)}
-              style={button3 ? selectedStyle : deselectedStyle}
-            />
-          </Col>
-        </Row>
+    <div className="calibration-background component-container">
+      {/* <div className="cursor" style={{ left: `${x}px`, top: `${y}px` }}>
+        <div className="inner" />
+      </div>
+      */}
+      <h1>
+        Compose Screen:
+        {hasMovedCursor
+          ? `Cursor at ${x}, ${y}.`
+          : 'Move your mouse around.'}
+      </h1>
+      <button type="button" onClick={() => sendClick(WAKE_ARDUINO)}>
+        Wake Arduino
+      </button>
+      <h3>
+        IPC:
+        {ipcAvailable.toString()}
+      </h3>
+      <button type="button" onClick={updateUserPresent}>
+        User:
+        {userPresent.toString()}
+      </button>
+      <div className="compose-instructions">
+        <p>Use your eyes to compose and play a song</p>
+        <hr style={{ height: '1px', backgroundColor: 'white', width: '40%' }} />
+        <p>Hold your gaze on one letter in each column to select notes.</p>
+        <p>
+          <span>When your composition is complete, look at</span>
+          <span style={{ margin: '10px' }}><img src={play} height="50px" alt="play" /></span>
+          <span>to hear your song.</span>
+        </p>
+      </div>
+      <div className="compose-container">
         <div className="staff-container">
           <div className="clef">&#119070;</div>
           <div className="staff">
@@ -288,11 +237,11 @@ const Test = (props) => {
           </div>
         </div> */}
       </div>
-    </>
+    </div>
   );
 };
 
 // export default Test;
 
-const TestWithSerialCommunication = withSerialCommunication(Test);
-export default TestWithSerialCommunication;
+const ComposeWithSerialCommunication = withSerialCommunication(Compose);
+export default ComposeWithSerialCommunication;

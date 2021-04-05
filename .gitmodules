@@ -4,3 +4,6 @@
 [submodule "fabfile/neoprene"]
 	path = fabfile/neoprene
 	url = git@github.com:scimusmn/neoprene.git
+[submodule "src/Arduino/arduino-base"]
+	path = src/Arduino/arduino-base
+	url = https://github.com/scimusmn/arduino-base
