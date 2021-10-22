@@ -57,6 +57,11 @@ rl.question('What is the Contentful Space ID? ', (answerSpaceId) => {
           execSync('yarn add --dev contentful-management');
           console.log(chalk.green('Done!'));
 
+          // Write to gatsby-config.js
+          console.log(chalk.green('Overwriting gatsby-config.js...'));
+          execSync('cp -f ./scripts/contentful/config-files/contentful-gatsby-config.js ./gatsby-config.js');
+          console.log(chalk.green('Done!'));
+
           process.exit(0); // Exit with success
         } else {
           console.log('\nOkay, please start over.');
