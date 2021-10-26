@@ -11,7 +11,7 @@ const rl = readline.createInterface({
 
 rl.on('close', () => {
   console.log('\nBye bye!');
-  process.exit(1); // Exit without success
+  process.exit(1);
 });
 
 console.log(chalk.green('Configuring app-template for Contentful integration...'));
@@ -63,10 +63,10 @@ rl.question('What is the Contentful Space ID? ', (answerSpaceId) => {
 
           console.log(chalk.green('Done!'));
 
-          process.exit(0); // Exit with success
+          process.exit(0);
         } else {
           console.log('\nOkay, please start over.');
-          process.exit(1); // Exit without success
+          process.exit(1);
         }
       });
     });
