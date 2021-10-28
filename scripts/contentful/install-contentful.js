@@ -17,7 +17,7 @@ rl.on('close', () => {
 console.log(chalk.green('Configuring app-template for Contentful integration...'));
 
 rl.question('What is the Contentful Space ID? ', (answerSpaceId) => {
-  rl.question('What is the Content Delivery API - access token? ', (answerAccessToken) => {
+  rl.question('What is the Content delivery API - access token? ', (answerAccessToken) => {
     rl.question('What is the Content management - access token? ', (answerManagementToken) => {
       console.log('\nDoes this look correct?');
       const empty = '#####';
