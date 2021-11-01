@@ -40,18 +40,19 @@ const selectContentTypes = async () => {
     queryAll: `allContentful${capitalizeFirstLetter(contentType.sys.id)}`,
   }));
 
-  //   console.log(contentTypeConfigs);
-
   console.log('\nWhich content type(s) should autogenerate pages? Available content types:');
 
-  // contentfulMyOtherContentType
   let typesStr = '';
   contentTypeConfigs.forEach((contentType) => {
     typesStr += `${chalk.blue(contentType.id)}\t`;
   });
   console.log(`${chalk.blue(typesStr)}`);
 
-  rl.question('Enter their ids separated by spaces: ', (answer) => {
+  rl.question('Enter their ids, separated by spaces: ', (answer) => {
+    if (answer === '') {
+      console.log('\nNo content types selected. Exiting...');
+      process.exit(1);
+    }
     console.log(chalk.green('Creating templates...'));
 
     const selectedContentTypes = answer.split(' ');
