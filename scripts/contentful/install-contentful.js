@@ -62,7 +62,7 @@ rl.question('What is the Contentful Space ID? ', (answerSpaceId) => {
           execSync('cp -f ./scripts/contentful/config-files/contentful-example-page.js ./src/pages/contentful-example.js');
 
           console.log(chalk.green('Done!'));
-          console.log(chalk.white('Basic Contentful integration complete.\n To test, run development server and go to http://localhost:3000/contentful-example/'));
+          console.log(chalk.white(`Basic Contentful integration complete.\nTo test, run ${chalk.green('yarn develop')} and go to ${chalk.green('http://localhost:3000/contentful-example/')}.`));
 
           process.exit(0);
         } else {

@@ -30,6 +30,11 @@ const selectContentTypes = async () => {
     .then((response) => response.items)
     .catch(console.error);
 
+  if (contentTypes.length === 0) {
+    console.log(chalk.yellow('Warning - No content types exist in your Space. Exiting...'));
+    process.exit(1);
+  }
+
   const contentTypeConfigs = contentTypes.map((contentType) => ({
     name: contentType.name,
     id: contentType.sys.id,
@@ -40,7 +45,7 @@ const selectContentTypes = async () => {
     queryAll: `allContentful${capitalizeFirstLetter(contentType.sys.id)}`,
   }));
 
-  console.log('\nWhich content type(s) should autogenerate pages? Available content types:');
+  console.log('Which content type should autogenerate pages? Available content types:');
 
   let typesStr = '';
   contentTypeConfigs.forEach((contentType) => {
@@ -48,37 +53,50 @@ const selectContentTypes = async () => {
   });
   console.log(`${chalk.blue(typesStr)}`);
 
-  rl.question('Enter their ids, separated by spaces: ', (answer) => {
+  rl.question('Enter its id: ', (answer) => {
     if (answer === '') {
       console.log('\nNo content types selected. Exiting...');
       process.exit(1);
     }
-    console.log(chalk.green('Creating templates...'));
 
-    const selectedContentTypes = answer.split(' ');
+    const selectedConfig = contentTypeConfigs.find((config) => config.id === answer);
+
+    if (!selectedConfig) {
+      console.log(chalk.red(`Content type "${answer}" not found`));
+      process.exit(1);
+      return;
+    }
+
+    console.log(chalk.green(`Creating template for ${selectedConfig.templateName}...`));
 
     // Create templates for each content type
     execSync('mkdir -p ./src/templates');
 
-    selectedContentTypes.forEach((selectedTypeId) => {
-      const contentTypeConfig = contentTypeConfigs.find((config) => config.id === selectedTypeId);
-      if (!contentTypeConfig) {
-        console.log(chalk.red(`Content type "${selectedTypeId}" not found`));
-        process.exit(1);
-        return;
-      }
-      // Create new template folder
-      execSync(`mkdir -p ./src/templates/${contentTypeConfig.templateName}`);
+    console.log(`Template folder: ${chalk.green(selectedConfig.templateName)}`);
 
-      // Copy boilerplate template into new template folder
-      execSync(`cp -f ./scripts/contentful/config-files/contentful-template-boilerplate.js ./src/templates/${contentTypeConfig.templateName}/index.js`);
+    // Create new template folder
+    execSync(`mkdir -p ./src/templates/${selectedConfig.templateName}`);
 
-      // Replace placeholders in template page
-      execSync(`sed -i '' "s/MyContentType/${contentTypeConfig.templateName}/g" ./src/templates/${contentTypeConfig.templateName}/index.js`);
+    console.log(`Template index: ${chalk.green(`./src/templates/${selectedConfig.templateName}/index.js`)}`);
 
-      console.log(chalk.green('Done!'));
-      process.exit(0);
-    });
+    // Copy boilerplate template into new template folder
+    execSync(`cp -f ./scripts/contentful/config-files/contentful-template-boilerplate.js ./src/templates/${selectedConfig.templateName}/index.js`);
+
+    // Replace placeholders in template page
+    execSync(`sed -i '' "s/MyContentType/${selectedConfig.templateName}/g" ./src/templates/${selectedConfig.templateName}/index.js`);
+
+    console.log(chalk.green('Writing to gatsby-node.js...'));
+
+    // Copy boilerplate gatsby-node.js
+    execSync('cp -f ./scripts/contentful/config-files/contentful-gatsby-node.js ./gatsby-node.js');
+
+    // Replace placeholders in gatsby-node.js
+    execSync(`sed -i '' "s/MyContentType/${selectedConfig.templateName}/g" ./gatsby-node.js`);
+
+    console.log(chalk.green('Done!'));
+    console.log(chalk.white(`Pages will now be generated for every record of type ${chalk.green(selectedConfig.id)}.\nTo confirm, run ${chalk.green('yarn develop')} and go to ${chalk.green('http://localhost:3000/x')} and to view a list of all pages.`));
+
+    process.exit(0);
   });
 };
 
