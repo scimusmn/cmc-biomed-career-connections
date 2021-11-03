@@ -45,7 +45,7 @@ const selectContentTypes = async () => {
     queryAll: `allContentful${capitalizeFirstLetter(contentType.sys.id)}`,
   }));
 
-  console.log('Which content type should autogenerate pages? Available content types:');
+  console.log('\nWhich content type should be used to autogenerate pages? Available content types:');
 
   let typesStr = '';
   contentTypeConfigs.forEach((contentType) => {
@@ -53,7 +53,7 @@ const selectContentTypes = async () => {
   });
   console.log(`${chalk.blue(typesStr)}`);
 
-  rl.question('Enter its id: ', (answer) => {
+  rl.question('Enter content type id: ', (answer) => {
     if (answer === '') {
       console.log('\nNo content types selected. Exiting...');
       process.exit(1);
@@ -94,7 +94,7 @@ const selectContentTypes = async () => {
     execSync(`sed -i '' "s/MyContentType/${selectedConfig.templateName}/g" ./gatsby-node.js`);
 
     console.log(chalk.green('Done!'));
-    console.log(chalk.white(`Pages will now be generated for every record of type ${chalk.green(selectedConfig.id)}.\nTo confirm, run ${chalk.green('yarn develop')} and go to ${chalk.green('http://localhost:3000/x')} and to view a list of all pages.`));
+    console.log(chalk.white(`Pages will now be generated for every record of type ${chalk.green(selectedConfig.id)}.\nTo confirm, run ${chalk.green('yarn develop')} and go to ${chalk.green('http://localhost:3000/x/')}. On the dev 404 page, you can view a list of all pages.`));
 
     process.exit(0);
   });
