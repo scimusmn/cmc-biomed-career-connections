@@ -27,6 +27,22 @@ yarn install:arduino-base
 ```
 Upon completion, you will see a new page at `src/pages/arduino.js` that can be used for testing Arduino communication.
 
+## Integrating with Contentful CMS
+If you want to pull content from Contentful, prepare your Space and content model in Contentful, gathering the following information:
+- `Space ID`
+- `Content delivery API - access token`
+- `Content management - access token`
+- The `Content Type` you would like to use for generating pages
+
+Then, use the following script to integrate Contentful into your app-template clone:
+ 
+```bash
+yarn install:contentful
+```
+
+This automates the full process documented [here](https://smm.atlassian.net/l/c/T13XPLU9) (except for Preview setup). 
+
+
 
 ## Cleanup
 Once you're done going through the setup of this template, delete everything above this line and start filling out the README with your app details.
