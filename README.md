@@ -34,13 +34,11 @@ If you would like your application to pull content from Contentful, prepare your
 - `Content management - access token`
 - The `Content Type` you would like to use for generating pages
 
-Then, use the following script to integrate Contentful into your app-template clone:
+Then, use the following script to integrate Contentful into your app-template clone. This automates the manual process documented [here](https://smm.atlassian.net/l/c/T13XPLU9) (except for ContentfulPreview setup).
  
 ```bash
 yarn install:contentful
 ```
-
-This automates the full process documented [here](https://smm.atlassian.net/l/c/T13XPLU9) (except for Preview setup). 
 
 
 
