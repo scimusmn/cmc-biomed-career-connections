@@ -39,7 +39,7 @@ Then run the following script:
 yarn install:contentful
 ```
 
-This sets up everything except Gatsby Cloud Previews. For full manual instructions, see [here](https://smm.atlassian.net/l/c/T13XPLU9).
+This sets up everything except Gatsby Cloud Previews. Full manual instructions [here](https://smm.atlassian.net/l/c/T13XPLU9).
 
 
 ## Cleanup
