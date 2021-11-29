@@ -3,7 +3,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '@styles/base.scss';
 
 export const wrapRootElement = ({ element }) => <>{element}</>;
