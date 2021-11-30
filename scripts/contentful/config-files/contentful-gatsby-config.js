@@ -12,6 +12,15 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-eslint',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: 'gatsby-source-contentful',
       options: {
@@ -21,14 +30,6 @@ module.exports = {
         useNameForId: false,
         environment: process.env.CONTENTFUL_ENVIRONMENT,
         host: process.env.CONTENTFUL_HOST,
-      },
-    },
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
       },
     },
     {
