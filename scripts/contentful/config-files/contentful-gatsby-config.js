@@ -13,15 +13,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-eslint',
     {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        data: '@import "src/styles/variables";',
-        includePaths: [
-          'src/components',
-        ],
-      },
-    },
-    {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
