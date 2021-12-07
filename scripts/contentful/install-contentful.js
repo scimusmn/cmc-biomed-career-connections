@@ -49,7 +49,7 @@ rl.question('What is the Contentful Space ID? ', (answerSpaceId) => {
 
           // Install dependencies
           console.log(chalk.green('Installing dependencies...'));
-          execSync('yarn add gatsby-source-contentful@2.3.2');
+          execSync('yarn add gatsby-source-contentful@7.0.0');
 
           console.log(chalk.green('Installing dev dependencies...'));
           execSync('yarn add --dev contentful-management');

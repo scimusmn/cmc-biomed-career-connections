@@ -12,15 +12,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-eslint',
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        data: '@import "src/styles/variables";',
-        includePaths: [
-          'src/components',
-        ],
-      },
-    },
+    'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
@@ -32,12 +24,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'app-default',
+        name: 'app-template',
         short_name: 'app',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#000000',
-        display: 'minimal-ui',
+        display: 'standalone',
+        icon: 'src/images/smm.png',
       },
     },
   ],

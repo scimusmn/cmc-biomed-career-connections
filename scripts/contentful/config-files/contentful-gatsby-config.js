@@ -12,13 +12,13 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-eslint',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-sass',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        data: '@import "src/styles/variables";',
-        includePaths: [
-          'src/components',
-        ],
+        name: 'images',
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -32,23 +32,16 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST,
       },
     },
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
-      },
-    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'app-default',
+        name: 'app-template',
         short_name: 'app',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#000000',
-        display: 'minimal-ui',
+        display: 'standalone',
+        icon: 'src/images/smm.png',
       },
     },
   ],
