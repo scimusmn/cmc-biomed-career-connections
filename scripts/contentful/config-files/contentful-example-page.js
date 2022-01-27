@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-const ContentfulExamplePage = () => {
+function ContentfulExamplePage() {
   const data = useStaticQuery(graphql`
     query {
       allContentfulContentType(limit: 100) {
@@ -32,6 +32,6 @@ const ContentfulExamplePage = () => {
       </ul>
     </>
   );
-};
+}
 
 export default ContentfulExamplePage;

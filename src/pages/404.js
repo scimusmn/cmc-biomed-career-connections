@@ -2,8 +2,8 @@ import React from 'react';
 
 import NoMatch from '@components/NoMatch';
 
-const NotFoundPage = () => (
-  <NoMatch />
-);
+function NotFoundPage() {
+  return <NoMatch />;
+}
 
 export default NotFoundPage;
