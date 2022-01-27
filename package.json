@@ -19,8 +19,6 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.12",
-    "@babel/register": "^7.16.9",
     "chalk": "^4.1.0",
     "depcheck": "^1.4.3",
     "eslint": "^7.32.0",
@@ -30,6 +28,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
+    "esm": "^3.2.25",
     "gatsby-plugin-eslint": "^2.0.8",
     "husky": "^4.3.0",
     "lodash": "^4.17.20",
@@ -49,10 +48,10 @@
   "scripts": {
     "build": "gatsby clean && gatsby build",
     "clean": "gatsby clean",
-    "depcheck": "node -r @babel/register scripts/depcheck.js",
+    "depcheck": "node -r esm scripts/depcheck.js",
     "develop": "gatsby develop --port 3000",
     "install:arduino-base": "node scripts/install-arduino-base.js",
-    "install:contentful": "node scripts/contentful/install-contentful.js && node scripts/contentful/autogenerate-pages.js",
+    "install:contentful": "node -r esm scripts/contentful/install-contentful.js && node -r esm scripts/contentful/autogenerate-pages.js",
     "lint": "npm-run-all lint:*",
     "lint:code": "node_modules/.bin/eslint .",
     "lint:style": "node_modules/.bin/stylelint \"**/*.*css\"",
