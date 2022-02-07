@@ -2,6 +2,9 @@ require('dotenv').config({
   path: '.env.development',
 });
 
+// We only run and install this script after the optional contentful packages
+// are installed by install-contentful. Tell eslint to be silent about this unresolved module.
+// eslint-disable-next-line import/no-unresolved
 const contentful = require('contentful-management');
 const chalk = require('chalk');
 const { execSync } = require('child_process');

@@ -49,9 +49,9 @@ const options = {
     'stylelint-config-standard',
     'stylelint-order',
     // Node script tools
-    // Babel core is a peer dep of register and should be kept, but needs to be whitelisted
-    '@babel/core',
-    '@babel/register',
+    // esm allows us to write and run ECMAScript modules using modern syntax.
+    // Used in package.json scripts.
+    'esm',
     'husky',
     'npm-run-all',
     'path',

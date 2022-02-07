@@ -3,11 +3,13 @@ import { Link } from 'gatsby';
 
 import Home from '@components/Home';
 
-const IndexPage = () => (
-  <>
-    <Home />
-    <Link to="/second-page">Test?</Link>
-  </>
-);
+function IndexPage() {
+  return (
+    <>
+      <Home />
+      <Link to="/second-page">Test?</Link>
+    </>
+  );
+}
 
 export default IndexPage;

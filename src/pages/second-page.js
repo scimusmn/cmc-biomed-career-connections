@@ -2,8 +2,8 @@ import React from 'react';
 
 import Test from '@components/Test';
 
-const SecondPage = () => (
-  <Test />
-);
+function SecondPage() {
+  return <Test />;
+}
 
 export default SecondPage;
