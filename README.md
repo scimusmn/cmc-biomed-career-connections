@@ -20,6 +20,9 @@ Install dependencies with yarn
 ```
 $ yarn
 ```
+
+Before your first push, create the matching remote repo (`scimusmn/project-name`) through the GitHub [website](https://github.com/scimusmn/) or [CLI](https://cli.github.com/). 
+
 ## Setting up serial communication
 If you want to enable serial communication, via Stele, for this app, you'll need to register an `ipcRenderer` from `Electron` and import the [`arduino-base`](https://github.com/scimusmn/arduino-base) sub-module. This has all been automated with the following script: 
 ```bash
