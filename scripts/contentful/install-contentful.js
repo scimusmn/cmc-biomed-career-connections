@@ -17,8 +17,8 @@ rl.on('close', () => {
 console.log(chalk.green('Configuring app-template for Contentful integration...'));
 
 rl.question('What is the Contentful Space ID? ', (answerSpaceId) => {
-  rl.question('What is the Content delivery API - access token? ', (answerAccessToken) => {
-    rl.question('What is the Content management - access token? ', (answerManagementToken) => {
+  rl.question('What is the Content Delivery API access token? ', (answerAccessToken) => {
+    rl.question('What is your Content Management access token? ', (answerManagementToken) => {
       console.log('\nDoes this look correct?');
       const empty = '#####';
       const spaceId = answerSpaceId || empty;
@@ -52,7 +52,7 @@ rl.question('What is the Contentful Space ID? ', (answerSpaceId) => {
           execSync('yarn add gatsby-source-contentful@7.3.2');
 
           console.log(chalk.green('Installing dev dependencies...'));
-          execSync('yarn add --dev contentful-management');
+          execSync('yarn add --dev contentful-management@10.19.4');
 
           // Write to gatsby-config.js
           console.log(chalk.green('Writing to gatsby-config.js...'));
