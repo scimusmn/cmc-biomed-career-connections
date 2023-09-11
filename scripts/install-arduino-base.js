@@ -10,6 +10,11 @@ if (!fs.existsSync('src/Arduino')) {
 // Get the latest submodule reference
 execSync('git submodule update --init');
 
+// Install/update arduino-base ReactSerial library dependencies in our root package.json
+// TODO: we should attempt to remove this dependecies to make the frontend more portable
+execSync('yarn add react-scrollable-list');
+execSync('yarn add reactstrap');
+
 // Copy wrapper page into Gatsby pages directory
 execSync('cp src/Arduino/arduino-base/ReactSerial/examples/gatsby/gatsby-wrapper-page.js src/pages/arduino.js');
 
