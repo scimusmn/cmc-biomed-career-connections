@@ -1,10 +1,15 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
+const { exit } = require('process');
 
 // Setup dir structure and install submodule for arduino-base if it does not exist
 if (!fs.existsSync('src/Arduino')) {
   execSync('cd src && mkdir -p Arduino');
   execSync('cd src/Arduino && git submodule add https://github.com/scimusmn/arduino-base');
+} else {
+  console.warn('Arduino directory already exists. Skipping submodule installation.');
+  console.warn('If you want a fresh re-install, delete the Arduino directory and run this script again.');
+  exit(1);
 }
 
 // Get the latest submodule reference
