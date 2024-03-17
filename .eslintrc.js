@@ -8,6 +8,10 @@ module.exports = {
   env: {
     browser: true,
   },
+  parserOptions: {
+    ecmaVersion: 2020, // to support optional chaining and other modern syntax
+    sourceType: 'module', // If you are using ECMAScript modules
+  },
   ignorePatterns: [
     'public/*',
     'src/Arduino/arduino-base',

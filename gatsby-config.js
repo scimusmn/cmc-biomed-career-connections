@@ -33,5 +33,6 @@ module.exports = {
         icon: 'src/images/smm.png',
       },
     },
+    'gatsby-plugin-postcss',
   ],
 };
