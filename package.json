@@ -20,6 +20,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.18",
     "chalk": "4.1.2",
     "contentful-management": "10.43.0",
     "depcheck": "^1.4.5",
@@ -32,14 +33,17 @@
     "eslint-webpack-plugin": "^3.1.1",
     "esm": "^3.2.25",
     "gatsby-plugin-eslint": "^4.0.4",
+    "gatsby-plugin-postcss": "^6.13.1",
     "husky": "^4.3.0",
     "lodash": "^4.17.20",
     "npm-run-all": "^4.1.5",
     "path": "^0.12.7",
+    "postcss": "^8.4.35",
     "sort-package-json": "^1.44.0",
     "stylelint": "^14.3.0",
     "stylelint-config-standard": "^24.0.0",
-    "stylelint-order": "^5.0.0"
+    "stylelint-order": "^5.0.0",
+    "tailwindcss": "^3.4.1"
   },
   "husky": {
     "hooks": {
