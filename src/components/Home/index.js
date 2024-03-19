@@ -1,5 +1,5 @@
 import React from 'react';
-import jsonData from '../../content/career-connections.json';
+import jsonData from '../../../static/content/career-connections.json';
 import ImageWithCaption from './ImageWithCaption';
 
 function Home() {
