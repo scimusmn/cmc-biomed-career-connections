@@ -15,7 +15,7 @@ module.exports = {
 
       fontFamily: {
         sans: 'Ropa Soft PTT',
-        primary: 'RooneyPro Light',
+        primary: 'Rooney Pro',
         secondary: 'Avenir Next Condensed',
       },
     },

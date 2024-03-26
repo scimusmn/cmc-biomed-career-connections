@@ -39,11 +39,11 @@ function Slider() {
     <>
       {/* Main top slide */}
       <Swiper
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // }}
         effect="fade"
         fadeEffect={{ crossFade: true }}
         thumbs={{ swiper: thumbsSwiper }}
@@ -84,8 +84,8 @@ function Slider() {
               className="w-[178px] h-[149px] object-cover rounded-t-[5px]"
             />
             <div className="w-[178px] h-[60px] bg-primaryDark rounded-b-[5px] flex justify-center items-center">
-              <p className="text-white text-[22px] leading-[25px] text-center">
-                {provider.designation}
+              <p className="text-white text-[22px] leading-[25px] text-center font-secondary font-semibold px-[4px]">
+                {provider.designationShort || provider.designation}
               </p>
             </div>
           </SwiperSlide>
