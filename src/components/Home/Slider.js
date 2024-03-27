@@ -26,12 +26,33 @@ function Slider() {
   useEffect(() => {
     // Bring the bottom thumb slider in view on click
     thumbsSwiperRef?.current?.on('click', (swiper) => {
-      thumbsSwiperRef.current.slideTo(swiper.clickedIndex);
+      const { clickedIndex, visibleSlidesIndexes } = swiper;
+      const isLeftMostThumbClicked = clickedIndex === visibleSlidesIndexes[0];
+      const isRightMostThumbClicked = clickedIndex
+        === visibleSlidesIndexes[visibleSlidesIndexes.length - 1];
+
+      // only slide to clicked thumb if it is the right or left most thumb
+      if (isLeftMostThumbClicked || isRightMostThumbClicked) {
+        thumbsSwiperRef.current.slideTo(clickedIndex);
+      }
     });
 
     // Bring the bottom thumb slider in view per active slide of main slider
     mainSwiperRef?.current?.on('slideChange', (swiper) => {
-      thumbsSwiperRef.current.slideTo(swiper.activeIndex);
+      const { activeIndex } = swiper;
+      const {
+        activeIndex: thumbActiveIndex,
+        visibleSlidesIndexes: visibleThumbIndexes,
+      } = thumbsSwiperRef.current;
+      // is left most thumb is active, but not fully visible
+      const isLeftMostThumbHidden = thumbActiveIndex !== visibleThumbIndexes[0];
+      // is right most thumb is active, but not fully visible
+      const isRightMostThumbActive = activeIndex
+        === visibleThumbIndexes[visibleThumbIndexes.length - 1];
+
+      if (isLeftMostThumbHidden || isRightMostThumbActive) {
+        thumbsSwiperRef.current.slideTo(activeIndex);
+      }
     });
   }, []);
 
@@ -74,7 +95,7 @@ function Slider() {
         onBeforeInit={(swiper) => {
           thumbsSwiperRef.current = swiper;
         }}
-        className="mySwiper"
+        className="mySwiper bg-secondary"
       >
         {jsonData.providers.map((provider) => (
           <SwiperSlide className="w-[202x] h-[237px] bg-secondary px-[12px] py-[14px] [&.swiper-slide-thumb-active]:bg-accent">
