@@ -14,13 +14,13 @@ module.exports = {
     'gatsby-plugin-eslint',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -30,7 +30,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#000000',
         display: 'standalone',
-        icon: 'src/images/smm.png',
+        icon: 'static/images/smm.png',
       },
     },
     'gatsby-plugin-postcss',

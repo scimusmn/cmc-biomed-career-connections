@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Ropa Soft PTT";
+    font-weight: 700;
+    src: url("/fonts/Ropa-Soft-PTT-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Ropa Soft PTT";
+    font-style: italic;
+    font-weight: 700;
+    src: url("/fonts/Ropa-Soft-PTT-Bold-Italic.ttf");
+  }
+
+  @font-face {
+    font-family: "Avenir Next Condensed";
+    font-weight: 600;
+    src: url("/fonts/Avenir-Next-Condensed-Demi-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Rooney Pro";
+    font-weight: 300;
+    src: url("/fonts/Rooney-Pro-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "Rooney Pro";
+    font-weight: 400;
+    src: url("/fonts/Rooney-Pro-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "Rooney Pro";
+    font-weight: 500;
+    src: url("/fonts/Rooney-Pro-Regular.ttf");
+  }
+}
