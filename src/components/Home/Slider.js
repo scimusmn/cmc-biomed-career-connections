@@ -32,8 +32,18 @@ function Slider() {
         === visibleSlidesIndexes[visibleSlidesIndexes.length - 1];
 
       // only slide to clicked thumb if it is the right or left most thumb
-      if (isLeftMostThumbClicked || isRightMostThumbClicked) {
-        thumbsSwiperRef.current.slideTo(clickedIndex);
+      if (isLeftMostThumbClicked) {
+        swiper.slideTo(clickedIndex);
+        if (swiper.isBeginning === false) {
+          swiper.translateTo(swiper.translate + 50.5);
+        }
+      }
+
+      if (isRightMostThumbClicked) {
+        swiper.slideNext();
+        if (swiper.isEnd === false) {
+          swiper.translateTo(swiper.translate + 50.5);
+        }
       }
     });
 
@@ -45,13 +55,24 @@ function Slider() {
         visibleSlidesIndexes: visibleThumbIndexes,
       } = thumbsSwiperRef.current;
       // is left most thumb is active, but not fully visible
-      const isLeftMostThumbHidden = thumbActiveIndex !== visibleThumbIndexes[0];
+      const isLeftMostThumbHidden = activeIndex === visibleThumbIndexes[0]
+        && thumbActiveIndex !== visibleThumbIndexes[0];
       // is right most thumb is active, but not fully visible
       const isRightMostThumbActive = activeIndex
         === visibleThumbIndexes[visibleThumbIndexes.length - 1];
 
-      if (isLeftMostThumbHidden || isRightMostThumbActive) {
+      if (isLeftMostThumbHidden) {
         thumbsSwiperRef.current.slideTo(activeIndex);
+        if (thumbsSwiperRef.current.isBeginning === false) {
+          thumbsSwiperRef.current.translateTo(thumbsSwiperRef.current.translate + 50.5);
+        }
+      }
+
+      if (isRightMostThumbActive) {
+        thumbsSwiperRef.current.slideNext();
+        if (thumbsSwiperRef.current.isEnd === false) {
+          thumbsSwiperRef.current.translateTo(thumbsSwiperRef.current.translate + 50.5);
+        }
       }
     });
   }, []);
