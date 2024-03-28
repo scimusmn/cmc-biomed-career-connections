@@ -60,11 +60,6 @@ function Slider() {
     <>
       {/* Main top slide */}
       <Swiper
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // }}
         effect="fade"
         fadeEffect={{ crossFade: true }}
         thumbs={{ swiper: thumbsSwiper }}
@@ -75,7 +70,7 @@ function Slider() {
         className="mySwiper2"
       >
         {jsonData.providers.map((provider) => (
-          <SwiperSlide>
+          <SwiperSlide key={`top-${provider.name}`}>
             <MainSlide
               provider={provider}
               activeTab={activeTab}
@@ -98,7 +93,10 @@ function Slider() {
         className="mySwiper bg-secondary"
       >
         {jsonData.providers.map((provider) => (
-          <SwiperSlide className="w-[202x] h-[237px] bg-secondary px-[12px] py-[14px] [&.swiper-slide-thumb-active]:bg-accent">
+          <SwiperSlide
+            key={`bottom-${provider.name}`}
+            className="w-[202x] h-[237px] bg-secondary px-[12px] py-[14px] [&.swiper-slide-thumb-active]:bg-accent"
+          >
             <img
               src={`/images/${provider.profileImage}`}
               alt="Profile"

@@ -12,108 +12,139 @@
     },
 
     {
-      "name": "John Snow",
-      "designation": "BioMedical Engineer",
+      "name": "Meredith Grey",
+      "designation": "General Surgeon",
       "designationShort": "",
-      "profileImage": "john-snow/profile.png",
-      "coverImage": "john-snow/cover.png",
+      "profileImage": "meredith-grey/profile.png",
+      "coverImage": "meredith-grey/cover.png",
       "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "john-snow/career-path.png"
+      "careerPathImage": "meredith-grey/career-path.png"
     },
-
     {
-      "name": "Carolyn Washburn",
-      "designation": "Emergency Medical Technician (EMT)",
-      "designationShort": "EMT",
-      "profileImage": "carolyn-washburn/profile.png",
-      "coverImage": "carolyn-washburn/cover.png",
-      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "carolyn-washburn/career-path.png"
-    },
-
-    {
-      "name": "John Snow",
-      "designation": "King in the North",
+      "name": "Derek Shepherd",
+      "designation": "Neurosurgeon",
       "designationShort": "",
-      "profileImage": "john-snow/profile.png",
-      "coverImage": "john-snow/cover.png",
-      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "john-snow/career-path.png"
-    },
-    {
-      "name": "Carolyn Washburn",
-      "designation": "Emergency Medical Technician (EMT)",
-      "designationShort": "EMT",
-      "profileImage": "carolyn-washburn/profile.png",
-      "coverImage": "carolyn-washburn/cover.png",
-      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "carolyn-washburn/career-path.png"
-    },
-
-    {
-      "name": "John Snow",
-      "designation": "King in the North",
-      "designationShort": "",
-      "profileImage": "john-snow/profile.png",
-      "coverImage": "john-snow/cover.png",
-      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "john-snow/career-path.png"
-    },
-    {
-      "name": "Carolyn Washburn",
-      "designation": "Emergency Medical Technician (EMT)",
-      "designationShort": "EMT",
-      "profileImage": "carolyn-washburn/profile.png",
-      "coverImage": "carolyn-washburn/cover.png",
-      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "carolyn-washburn/career-path.png"
-    },
-
-    {
-      "name": "John Snow",
-      "designation": "King in the North",
-      "designationShort": "",
-      "profileImage": "john-snow/profile.png",
-      "coverImage": "john-snow/cover.png",
-      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "john-snow/career-path.png"
-    },
-    {
-      "name": "Carolyn Washburn",
-      "designation": "Emergency Medical Technician (EMT)",
-      "designationShort": "EMT",
-      "profileImage": "carolyn-washburn/profile.png",
-      "coverImage": "carolyn-washburn/cover.png",
-      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "carolyn-washburn/career-path.png"
-    },
-
-    {
-      "name": "John Snow",
-      "designation": "King in the North",
-      "designationShort": "",
-      "profileImage": "john-snow/profile.png",
-      "coverImage": "john-snow/cover.png",
-      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "john-snow/career-path.png"
-    },
-    {
-      "name": "Carolyn Washburn",
-      "designation": "Emergency Medical Technician (EMT)",
-      "designationShort": "EMT",
       "profileImage": "carolyn-washburn/profile.png",
       "coverImage": "carolyn-washburn/cover.png",
       "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
       "careerPathImage": "carolyn-washburn/career-path.png"
     },
     {
-      "name": "John Snow",
-      "designation": "King in the North",
-      "designationShort": "",
-      "profileImage": "john-snow/profile.png",
-      "coverImage": "john-snow/cover.png",
+      "name": "Cristina Yang",
+      "designation": "Cardiothoracic Surgeon",
+      "designationShort": "CTS",
+      "profileImage": "meredith-grey/profile.png",
+      "coverImage": "meredith-grey/cover.png",
       "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
-      "careerPathImage": "john-snow/career-path.png"
+      "careerPathImage": "meredith-grey/career-path.png"
+    },
+    {
+      "name": "Alex Karev",
+      "designation": "Pediatric Surgeon",
+      "designationShort": "",
+      "profileImage": "carolyn-washburn/profile.png",
+      "coverImage": "carolyn-washburn/cover.png",
+      "story": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.",
+      "careerPathImage": "carolyn-washburn/career-path.png"
+    },
+    {
+      "name": "Miranda Bailey",
+      "designation": "General Surgeon",
+      "designationShort": "",
+      "profileImage": "meredith-grey/profile.png",
+      "coverImage": "meredith-grey/cover.png",
+      "story": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "careerPathImage": "meredith-grey/career-path.png"
+    },
+    {
+      "name": "Richard Webber",
+      "designation": "General Surgeon",
+      "designationShort": "",
+      "profileImage": "carolyn-washburn/profile.png",
+      "coverImage": "carolyn-washburn/cover.png",
+      "story": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.",
+      "careerPathImage": "carolyn-washburn/career-path.png"
+    },
+    {
+      "name": "Jackson Avery",
+      "designation": "Plastic Surgeon",
+      "designationShort": "",
+      "profileImage": "meredith-grey/profile.png",
+      "coverImage": "meredith-grey/cover.png",
+      "story": "Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.",
+      "careerPathImage": "meredith-grey/career-path.png"
+    },
+    {
+      "name": "April Kepner",
+      "designation": "Trauma Surgeon",
+      "designationShort": "",
+      "profileImage": "carolyn-washburn/profile.png",
+      "coverImage": "carolyn-washburn/cover.png",
+      "story": "Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.",
+      "careerPathImage": "carolyn-washburn/career-path.png"
+    },
+    {
+      "name": "Amelia Shepherd",
+      "designation": "Neurosurgeon",
+      "designationShort": "",
+      "profileImage": "meredith-grey/profile.png",
+      "coverImage": "meredith-grey/cover.png",
+      "story": "Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "careerPathImage": "meredith-grey/career-path.png"
+    },
+    {
+      "name": "Owen Hunt",
+      "designation": "Trauma Surgeon",
+      "designationShort": "",
+      "profileImage": "carolyn-washburn/profile.png",
+      "coverImage": "carolyn-washburn/cover.png",
+      "story": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.",
+      "careerPathImage": "carolyn-washburn/career-path.png"
+    },
+    {
+      "name": "Arizona Robbins",
+      "designation": "Pediatric Surgeon",
+      "designationShort": "",
+      "profileImage": "meredith-grey/profile.png",
+      "coverImage": "meredith-grey/cover.png",
+      "story": "Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "careerPathImage": "meredith-grey/career-path.png"
+    },
+    {
+      "name": "Callie Torres",
+      "designation": "Orthopedic Surgeon",
+      "designationShort": "",
+      "profileImage": "carolyn-washburn/profile.png",
+      "coverImage": "carolyn-washburn/cover.png",
+      "story": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.",
+      "careerPathImage": "carolyn-washburn/career-path.png"
+    },
+    {
+      "name": "Teddy Altman",
+      "designation": "Cardiothoracic Surgeon",
+      "designationShort": "",
+      "profileImage": "meredith-grey/profile.png",
+      "coverImage": "meredith-grey/cover.png",
+      "story": "Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.",
+      "careerPathImage": "meredith-grey/career-path.png"
+    },
+    {
+      "name": "Stephanie Edwards",
+      "designation": "General Surgeon",
+      "designationShort": "",
+      "profileImage": "carolyn-washburn/profile.png",
+      "coverImage": "carolyn-washburn/cover.png",
+      "story": "Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.",
+      "careerPathImage": "carolyn-washburn/career-path.png"
+    },
+    {
+      "name": "Jo Wilson",
+      "designation": "General Surgeon",
+      "designationShort": "",
+      "profileImage": "meredith-grey/profile.png",
+      "coverImage": "meredith-grey/cover.png",
+      "story": "Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "careerPathImage": "meredith-grey/career-path.png"
     }
   ]
 }
