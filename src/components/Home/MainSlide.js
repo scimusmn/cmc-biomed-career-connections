@@ -18,7 +18,7 @@ export default function MainSlide({ provider, activeTab, setActiveTab }) {
             type="button"
             className={`w-[237px] h-59px] rounded-[5px] pt-[10px] pb-[3px] text-[35px] italic leading-[47px] ${
               activeTab === 'my-story'
-                ? 'bg-primary text-secondary'
+                ? 'bg-primaryDarken text-white scale-95'
                 : 'bg-secondary text-primary'
             }`}
             onClick={() => setActiveTab('my-story')}
@@ -30,7 +30,7 @@ export default function MainSlide({ provider, activeTab, setActiveTab }) {
             type="button"
             className={`w-[237px] h-59px] rounded-[5px] pt-[10px] pb-[3px] text-[35px] italic leading-[47px] ${
               activeTab === 'career-path'
-                ? 'bg-primary text-white'
+                ? 'bg-primaryDarken text-white scale-95'
                 : 'bg-secondary text-primary'
             }`}
             onClick={() => setActiveTab('career-path')}

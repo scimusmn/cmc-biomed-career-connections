@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <div className="px-[72px] py-[26px] h-[106px] bg-secondary flex items-center">
-        <h1 className="text-[60px] leading-[78px] italic font-bold mt-[26px] text-primary">
+        <h1 className="text-[60px] leading-[78px] italic font-extrabold mt-[26px] text-primary">
           {jsonData.title}
         </h1>
       </div>
