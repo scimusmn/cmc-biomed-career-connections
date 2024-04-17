@@ -124,7 +124,7 @@ function Slider() {
               className="w-[178px] h-[149px] object-cover rounded-t-[5px]"
             />
             <div className="w-[178px] h-[60px] bg-primaryDark rounded-b-[5px] flex justify-center items-center">
-              <p className="text-white text-[22px] leading-[25px] text-center font-secondary font-semibold px-[4px]">
+              <p className="text-white text-[22px] leading-[25px] text-center font-secondary font-semibold px-[5px]">
                 {provider.designationShort || provider.designation}
               </p>
             </div>
