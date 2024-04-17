@@ -2,7 +2,7 @@
 
 ## JSON Structure Documentation
 
-This document explains the JSON structure used in the Professional Profiles system. Each entry in the JSON array represents a healthcare professional's profile with detailed attributes. This guide will help non-technical users understand how data is structured and how it impacts the application.
+This document explains the JSON structure used in the Professional Profiles system. Each entry in the JSON array represents a healthcare professional's profile with detailed attributes.
 
 ### JSON Field Definitions
 
