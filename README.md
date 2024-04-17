@@ -12,11 +12,11 @@ Below is a detailed description of each field in the JSON structure for the Prof
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------|-----------------|---------------------------------------------------|
 | `name`             | Full name of the professional. This is displayed on their profile page.                                                          | string           | N/A             | `"David Oh"`                                      |
 | `designation`      | Full official job title at the organization.                                                                                      | string           | N/A             | `"Chief medical officer at Hoxworth Blood Center"`|
-| `designationShort` | Abbreviated job title used in smaller spaces or where the full title is not necessary.                                            | string           | N/A             | `"Chief medical officer"`                         |
-| `profileImage`     | Path to the profile image file. This image is used to visually represent the professional on their profile.                       | string           | Relative path   | `"david-oh/profile.png"`                          |
-| `coverImage`       | Path to the cover image file. This image is displayed as a background or banner on their profile page.                            | string           | Relative path   | `"david-oh/cover.png"`                            |
-| `story`            | A brief narrative or description of the professional's role, responsibilities, and personal insights related to their profession. | string           | N/A             | `"Blood is considered to be a drug and we're..."` |
-| `careerPathImage`  | Path to an image depicting the professional's career path or milestones. This visualizes their professional journey.               | string           | Relative path   | `"david-oh/career-path.png"`                      |
+| `designationShort` | Abbreviated job title used in the bottom slider or where the full title is not necessary.                                            | string           | N/A             | `"Chief medical officer"`                         |
+| `profileImage`     | Path to the profile image file. This smaller image is used to visually represent the professional on the bottom slider.                       | string           | Relative path   | `"david-oh/profile.png"`                          |
+| `coverImage`       | Path to the cover image file. This bigger image is displayed as a banner on the top slider.                            | string           | Relative path   | `"david-oh/cover.png"`                            |
+| `story`            | A brief narrative or description of personal insights related to their profession. Displayed under the "My Story" tab. | string           | N/A             | `"Blood is considered to be a drug and we're..."` |
+| `careerPathImage`  | Path to an image depicting the professional's career path or milestones. Displayed under the "My Career Path" tab.               | string           | Relative path   | `"david-oh/career-path.png"`                      |
 
 ### Usage
 
