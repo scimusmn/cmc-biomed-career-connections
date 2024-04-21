@@ -14,33 +14,24 @@ export default function MainSlide({ provider, activeTab, setActiveTab }) {
       <div className="flex flex-col mt-[6px]">
         {/* Tab switcher buttons */}
         <div className="flex gap-[18px]">
-          <button
-            type="button"
-            className={`w-[237px] h-59px] rounded-[5px] pt-[10px] pb-[3px] text-[35px] italic leading-[47px] ${
-              activeTab === 'my-story'
-                ? 'bg-primaryDarken text-white scale-95'
-                : 'bg-secondary text-primary'
-            }`}
+          <TabButton
+            isActive={activeTab === 'my-story'}
             onClick={() => setActiveTab('my-story')}
           >
             My Story
-          </button>
+          </TabButton>
 
-          <button
-            type="button"
-            className={`w-[237px] h-59px] rounded-[5px] pt-[10px] pb-[3px] text-[35px] italic leading-[47px] ${
-              activeTab === 'career-path'
-                ? 'bg-primaryDarken text-white scale-95'
-                : 'bg-secondary text-primary'
-            }`}
+          <TabButton
+            isActive={activeTab === 'career-path'}
             onClick={() => setActiveTab('career-path')}
           >
             My Career Path
-          </button>
+          </TabButton>
+
         </div>
 
         {/* Name and designation */}
-        <p className="font-primary text-primary text-[35px] mt-[52px] ml-[66px] leading-[43px]">
+        <p className="font-primary text-blue text-[35px] mt-[52px] ml-[66px] leading-[43px]">
           <span>{provider.name}</span>
           <br />
           <span className="italic">{provider.designation}</span>
@@ -48,7 +39,7 @@ export default function MainSlide({ provider, activeTab, setActiveTab }) {
 
         {/* Active tab contents */}
         {activeTab === 'my-story' ? (
-          <p className="mt-[42px] text-[28px] leading-[43px] font-primary font-light text-primary w-[892px]">
+          <p className="mt-[42px] text-[28px] leading-[43px] font-primary font-light text-blue w-[892px]">
             &quot;
             {provider.story}
             &quot;
@@ -65,6 +56,22 @@ export default function MainSlide({ provider, activeTab, setActiveTab }) {
   );
 }
 
+function TabButton({ isActive, onClick, children }) {
+  return (
+    <button
+      type="button"
+      className={`w-[237px] h-59px] rounded-[5px] pt-[10px] pb-[3px] text-[35px] italic leading-[47px] 
+        ${isActive ? 'bg-blue text-white active:bg-blueDarken10'
+        : 'bg-grey text-blue active:bg-greyDarken10'}
+        active:scale-95
+      `}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+}
+
 MainSlide.propTypes = {
   activeTab: PropTypes.string.isRequired,
   setActiveTab: PropTypes.func.isRequired,
@@ -76,4 +83,10 @@ MainSlide.propTypes = {
     story: PropTypes.string.isRequired,
     careerPathImage: PropTypes.string.isRequired,
   }).isRequired,
+};
+
+TabButton.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
 };

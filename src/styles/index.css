@@ -46,4 +46,8 @@
     font-weight: 500;
     src: url("/fonts/Rooney-Pro-Regular.ttf");
   }
+
+  * {
+    @apply select-none;
+  }
 }
