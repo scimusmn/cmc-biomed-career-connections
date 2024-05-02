@@ -17,6 +17,13 @@
   }
 
   @font-face {
+    font-family: "Ropa Soft PTT";
+    font-style: italic;
+    font-weight: 800;
+    src: url("/fonts/Ropa-Soft-PTT-ExtraBold-Italic.ttf");
+  }
+
+  @font-face {
     font-family: "Avenir Next Condensed";
     font-weight: 600;
     src: url("/fonts/Avenir-Next-Condensed-Demi-Bold.ttf");
@@ -38,5 +45,13 @@
     font-family: "Rooney Pro";
     font-weight: 500;
     src: url("/fonts/Rooney-Pro-Regular.ttf");
+  }
+
+  * {
+    @apply select-none;
+  }
+
+  img {
+    -webkit-user-drag: none;
   }
 }

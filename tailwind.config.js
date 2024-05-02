@@ -7,10 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#005872',
-        secondary: '#E6E5E4',
-        primaryDark: '#13435C',
-        accent: '#96C8D4',
+        blue: '#005872',
+        darkBlue: '#13435C',
+        lightBlue: '#96C8D4',
+        blueDarken10: '#004F67',
+
+        grey: '#E6E5E4',
+        greyDarken10: '#CFCDCE',
+
       },
 
       fontFamily: {
