@@ -16,7 +16,7 @@
       "designationShort": "Respiratory therapist",
       "profileImage": "john-bush/profile.png",
       "coverImage": "john-bush/cover.png",
-      "story": "Working in the hospital as a patient transporter gave me a chance to see lots of careers. I knew I wanted to be hands-on with patients. So, I went to Cincinnati State, got my Associate’s degree and passed my medical boards in respiratory therapy. That opened new opportunities for me at the hospital and eventually got me to the sidelines at Cincinnati Bengals games, where I’m part of the emergency action plan to support players. On my best days, I get to help people breathe better and get back to their families.",
+      "story": "I knew I wanted to be hands-on with patients. So, I went to Cincinnati State, got my Associate’s degree and became a licensed respiratory therapist. That opened opportunities for me at the hospital and on the sidelines at Cincinnati Bengals games, where I support players in the event of an emergency. On my best days, I help people breathe better and get back to their families.",
       "careerPathImage": "john-bush/career-path.png"
     },
     {
@@ -25,17 +25,17 @@
       "designationShort": "Psychiatrist",
       "profileImage": "lori-crosby/profile.png",
       "coverImage": "lori-crosby/cover.png",
-      "story": "We see patients as holistic — with their minds and bodies connected. Behaviors, such as exercise, or how we eat, or when we take medication, might help address a range of concerns. My work focuses on those behaviors. How do we optimize and make it easy for people to do what they need to do to care for their conditions and themselves?",
+      "story": "We see patients as holistic — with their minds and bodies connected. Behaviors, such as exercise, or how we eat, or when we take medication - my work focuses on those behaviors. How do we optimize and make it easy for people to do what they need to do to care for their conditions and themselves?",
       "careerPathImage": "lori-crosby/career-path.png"
     },
     {
-      "name": "Lori Pierson",
+      "name": "Lori Shutz",
       "designation": "Hoxworth Blood Center donor care technician",
       "designationShort": "Donor care technician",
-      "profileImage": "lori-pierson/profile.png",
-      "coverImage": "lori-pierson/cover.png",
-      "story": "I assist with collecting blood products to provide hospitals and surgery centers with the supply they need to help individuals who need blood transfusions. I get to know some of the regular donors and learn about their families — I look forward to asking them about how they are doing and to thanking them for giving. These volunteers help the community and save lives, and I love playing a role in that.",
-      "careerPathImage": "lori-pierson/career-path.png"
+      "profileImage": "lori-shutz/profile.png",
+      "coverImage": "lori-shutz/cover.png",
+      "story": "I assist with collecting blood products to help individuals who need blood transfusions. I get to know some of the regular donors and learn about their families — I look forward to asking them about how they are doing and to thanking them for giving. These volunteers help the community and save lives, and I love playing a role in that.",
+      "careerPathImage": "lori-shutz/career-path.png"
     },
     {
       "name": "Margaret Chamberlain",
@@ -43,7 +43,7 @@
       "designationShort": "Radiologic technologist",
       "profileImage": "margaret-chamberlain/profile.png",
       "coverImage": "margaret-chamberlain/cover.png",
-      "story": "We are skeleton photographers. Doctors can't see what's going on inside someone’s body, and imaging is the next best thing. My job involves a lot of thinking outside of the box. I may not be able to take an x-ray in a textbook way, because it would make the patient uncomfortable, but I always find a way to get the doctors the information they need without harming the patient or making them feel worse.",
+      "story": "We are skeleton photographers. High-quality imaging allows doctors to see what’s going on inside someone’s body. As an X-ray technologist, I may not be able to take the image the same way every time, so I do a lot of thinking outside the box to keep the patients comfortable. I always find a way to get the doctors the information they need.",
       "careerPathImage": "margaret-chamberlain/career-path.png"
     },
     {
@@ -52,7 +52,7 @@
       "designationShort": "Physical therapist",
       "profileImage": "molly-thomas/profile.png",
       "coverImage": "molly-thomas/cover.png",
-      "story": "I help young people work with their muscles to move their bodies as well as they can. That looks different for everybody. Without your muscles working together, you would not be able to do things like sit and stand, run and jump. Your muscles are the dynamic part of you. They help you be a person. They’re what makes you fun!",
+      "story": "I help young people work with their muscles to move their bodies as well as they can. That looks different for everybody. Without your muscles working together, you would not be able to do things like sit, stand, run and jump. Your muscles are the dynamic part of you. They help you be a person. They’re what makes you able to do so many fun things every day!",
       "careerPathImage": "molly-thomas/career-path.png"
     },
     {
@@ -61,47 +61,11 @@
       "designationShort": "Physician and surgeon",
       "profileImage": "robert-bohinski/profile.png",
       "coverImage": "robert-bohinski/cover.png",
-      "story": "There are mechanical aspects of the spine that keep us upright and moving, and there are the parts that interact with our nervous system that keep us out of pain and send healthy signals to our arms and legs. That blend of bones and nerves hooked me as a medical student. I aim to keep people as active as they can be — if you've got a bad spine, it's hard to do anything well.",
+      "story": "Our spine keeps us upright and moving, and it also sends signals through the central nervous system to our brain, arms and legs. This explains why we feel pain, and why nerve damage in your spine might result in numbness in your feet. As a medical student, this complex interplay of bones and nerves is what hooked me on neurosurgery.",
       "careerPathImage": "robert-bohinski/career-path.png"
     },
     {
       "name": "Misty Vaccariello, LMT",
-      "designation": "Sports Massage Therapist",
-      "designationShort": "Massage Therapist",
-      "profileImage": "misty-vaccariello/profile.png",
-      "coverImage": "misty-vaccariello/cover.png",
-      "story": "Licensed massage therapy is the perfect missing piece in an athlete’s life between orthopedics and physical therapy. I’ve been fortunate to work with hobbyists and professional athletes and return their comfort and mobility without medications. Having the ability to relieve an injured client’s pain and help them get back to their ideal fitness level makes me want to help as many people as I can.",
-      "careerPathImage": "misty-vaccariello/career-path.png"
-    },
-    {
-      "name": "Misty Vaccariello, LMT (1)",
-      "designation": "Sports Massage Therapist",
-      "designationShort": "Massage Therapist",
-      "profileImage": "misty-vaccariello/profile.png",
-      "coverImage": "misty-vaccariello/cover.png",
-      "story": "Licensed massage therapy is the perfect missing piece in an athlete’s life between orthopedics and physical therapy. I’ve been fortunate to work with hobbyists and professional athletes and return their comfort and mobility without medications. Having the ability to relieve an injured client’s pain and help them get back to their ideal fitness level makes me want to help as many people as I can.",
-      "careerPathImage": "misty-vaccariello/career-path.png"
-    },
-    {
-      "name": "Misty Vaccariello, LMT (2)",
-      "designation": "Sports Massage Therapist",
-      "designationShort": "Massage Therapist",
-      "profileImage": "misty-vaccariello/profile.png",
-      "coverImage": "misty-vaccariello/cover.png",
-      "story": "Licensed massage therapy is the perfect missing piece in an athlete’s life between orthopedics and physical therapy. I’ve been fortunate to work with hobbyists and professional athletes and return their comfort and mobility without medications. Having the ability to relieve an injured client’s pain and help them get back to their ideal fitness level makes me want to help as many people as I can.",
-      "careerPathImage": "misty-vaccariello/career-path.png"
-    },
-    {
-      "name": "Misty Vaccariello, LMT (3)",
-      "designation": "Sports Massage Therapist",
-      "designationShort": "Massage Therapist",
-      "profileImage": "misty-vaccariello/profile.png",
-      "coverImage": "misty-vaccariello/cover.png",
-      "story": "Licensed massage therapy is the perfect missing piece in an athlete’s life between orthopedics and physical therapy. I’ve been fortunate to work with hobbyists and professional athletes and return their comfort and mobility without medications. Having the ability to relieve an injured client’s pain and help them get back to their ideal fitness level makes me want to help as many people as I can.",
-      "careerPathImage": "misty-vaccariello/career-path.png"
-    },
-    {
-      "name": "Misty Vaccariello, LMT (4)",
       "designation": "Sports Massage Therapist",
       "designationShort": "Massage Therapist",
       "profileImage": "misty-vaccariello/profile.png",
