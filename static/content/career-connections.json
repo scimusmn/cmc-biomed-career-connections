@@ -4,7 +4,7 @@
     {
       "name": "David Oh",
       "designation": "Chief medical officer at Hoxworth Blood Center",
-      "designationShort": "Chief medical officer",
+      "designationShort": "Physician",
       "profileImage": "david-oh/profile.png",
       "coverImage": "david-oh/cover.png",
       "story": "Blood is considered to be a drug and we're regulated by the FDA. My job is to make sure that the blood that we collect, process and distribute is safe for the donors and for the recipients. I think of blood donation as a donor giving freely of their life essence and creating a link with someone in need, which is inspiring!",
@@ -13,7 +13,7 @@
     {
       "name": "John Bush",
       "designation": "Respiratory therapist",
-      "designationShort": "Respiratory therapist",
+      "designationShort": "Respiratory Therapist",
       "profileImage": "john-bush/profile.png",
       "coverImage": "john-bush/cover.png",
       "story": "I knew I wanted to be hands-on with patients. So, I went to Cincinnati State, got my Associate’s degree and became a licensed respiratory therapist. That opened opportunities for me at the hospital and on the sidelines at Cincinnati Bengals games, where I support players in the event of an emergency. On my best days, I help people breathe better and get back to their families.",
@@ -31,7 +31,7 @@
     {
       "name": "Lori Shutz",
       "designation": "Hoxworth Blood Center donor care technician",
-      "designationShort": "Donor care technician",
+      "designationShort": "Donor Care Technician",
       "profileImage": "lori-shutz/profile.png",
       "coverImage": "lori-shutz/cover.png",
       "story": "I assist with collecting blood products to help individuals who need blood transfusions. I get to know some of the regular donors and learn about their families — I look forward to asking them about how they are doing and to thanking them for giving. These volunteers help the community and save lives, and I love playing a role in that.",
@@ -40,7 +40,7 @@
     {
       "name": "Margaret Chamberlain",
       "designation": "Radiologic technologist",
-      "designationShort": "Radiologic technologist",
+      "designationShort": "Radiologic Technologist",
       "profileImage": "margaret-chamberlain/profile.png",
       "coverImage": "margaret-chamberlain/cover.png",
       "story": "We are skeleton photographers. High-quality imaging allows doctors to see what’s going on inside someone’s body. As an X-ray technologist, I may not be able to take the image the same way every time, so I do a lot of thinking outside the box to keep the patients comfortable. I always find a way to get the doctors the information they need.",
@@ -49,7 +49,7 @@
     {
       "name": "Molly Thomas",
       "designation": "Pediatric physical therapist",
-      "designationShort": "Physical therapist",
+      "designationShort": "Physical Therapist",
       "profileImage": "molly-thomas/profile.png",
       "coverImage": "molly-thomas/cover.png",
       "story": "I help young people work with their muscles to move their bodies as well as they can. That looks different for everybody. Without your muscles working together, you would not be able to do things like sit, stand, run and jump. Your muscles are the dynamic part of you. They help you be a person. They’re what makes you able to do so many fun things every day!",
@@ -58,7 +58,7 @@
     {
       "name": "Robert Bohinski, M.D., Ph.D.",
       "designation": "Physician and surgeon",
-      "designationShort": "Physician and surgeon",
+      "designationShort": "Physician",
       "profileImage": "robert-bohinski/profile.png",
       "coverImage": "robert-bohinski/cover.png",
       "story": "Our spine keeps us upright and moving, and it also sends signals through the central nervous system to our brain, arms and legs. This explains why we feel pain, and why nerve damage in your spine might result in numbness in your feet. As a medical student, this complex interplay of bones and nerves is what hooked me on neurosurgery.",
