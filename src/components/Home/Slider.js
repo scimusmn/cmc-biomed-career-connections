@@ -22,6 +22,14 @@ function Slider() {
 
   const thumbsSwiperRef = useRef(null);
   const mainSwiperRef = useRef(null);
+  let numSlides = 9.5;
+  let tempStyle = {};
+
+  // to center small number of slides
+  if (jsonData.providers.length === 8) {
+    numSlides = 8;
+    tempStyle = { marginLeft: '20px' };
+  }
 
   useEffect(() => {
     // Bring the bottom thumb slider in view on click
@@ -105,7 +113,8 @@ function Slider() {
       {/* Bottom thumb slider */}
       <Swiper
         onSwiper={setThumbsSwiper}
-        slidesPerView={9.5}
+        // slidesPerView={9.5}
+        slidesPerView={numSlides}
         freeMode
         watchSlidesProgress
         modules={[FreeMode, Thumbs]}
@@ -123,8 +132,14 @@ function Slider() {
               src={`/images/${provider.profileImage}`}
               alt="Profile"
               className="w-[178px] h-[149px] object-cover rounded-t-[5px]"
+              // temp style for fewer slides
+              style={tempStyle}
             />
-            <div className="w-[178px] h-[60px] bg-darkBlue rounded-b-[5px] flex justify-center items-center">
+            <div
+              className="w-[178px] h-[60px] bg-darkBlue rounded-b-[5px] flex justify-center items-center"
+              // temp style for fewer slides
+              style={tempStyle}
+            >
               <p className="text-white text-[22px] leading-[25px] text-center font-secondary font-semibold px-[5px]">
                 {provider.designationShort || provider.designation}
               </p>
